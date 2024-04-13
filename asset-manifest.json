@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/interactive-game/static/css/main.606b9920.css",
+    "main.js": "/interactive-game/static/js/main.2cec6865.js",
+    "index.html": "/interactive-game/index.html",
+    "main.606b9920.css.map": "/interactive-game/static/css/main.606b9920.css.map",
+    "main.2cec6865.js.map": "/interactive-game/static/js/main.2cec6865.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.606b9920.css",
+    "static/js/main.2cec6865.js"
+  ]
+}
