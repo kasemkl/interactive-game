@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/interactive-game/static/css/main.606b9920.css",
-    "main.js": "/interactive-game/static/js/main.3f70a9db.js",
+    "main.css": "/interactive-game/static/css/main.3f5d772a.css",
+    "main.js": "/interactive-game/static/js/main.6696dd46.js",
     "index.html": "/interactive-game/index.html",
-    "main.606b9920.css.map": "/interactive-game/static/css/main.606b9920.css.map",
-    "main.3f70a9db.js.map": "/interactive-game/static/js/main.3f70a9db.js.map"
+    "main.3f5d772a.css.map": "/interactive-game/static/css/main.3f5d772a.css.map",
+    "main.6696dd46.js.map": "/interactive-game/static/js/main.6696dd46.js.map"
   },
   "entrypoints": [
-    "static/css/main.606b9920.css",
-    "static/js/main.3f70a9db.js"
+    "static/css/main.3f5d772a.css",
+    "static/js/main.6696dd46.js"
   ]
 }
