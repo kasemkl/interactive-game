@@ -1,0 +1,139 @@
+:root {
+  --background-color: #172554;
+  --primary-color: #e2e8f0;
+  --secondary-color: #e2e8f0;
+}
+nav {
+  padding: 10px 20px !important;
+  position: relative !important;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--background-color);
+}
+.side-brand {
+  display: flex;
+  /* align-items: center; */
+  flex-direction: row;
+}
+.navbar-brand .first-letter {
+  color: #714b67 !important;
+  font-weight: 600;
+}
+.navbar-brand {
+  color: var(--secondary-color) !important;
+  font-size: 24px !important;
+  font-family: cursive;
+  font-weight: 200;
+}
+.card {
+  font-size: 12px;
+}
+
+@media (max-width: 600px) {
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-elements {
+    position: absolute;
+    right: 0;
+    top: 1px;
+    color: var(--primary-color);
+    width: 0px;
+    height: calc(100vh - 60px);
+    transition: all 0.3s ease-in !important;
+    overflow: hidden;
+    z-index: 100;
+  }
+
+  .nav-elements.active {
+    width: 270px;
+  }
+
+  .nav-elements ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-elements ul li {
+    margin-right: unset;
+    margin-top: 22px;
+  }
+}
+.sidebar-button {
+  width: 30px;
+  height: 30px;
+  outline: none;
+  border: none;
+  background: none;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  color: var(--secondary-color);
+}
+.cancel-button {
+  width: 30px;
+  height: 30px;
+  outline: none;
+  border: none;
+  background: none;
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  color: var(--secondary-color);
+}
+.sidebar-show {
+  display: block;
+  position: relative;
+  padding-top: 10px;
+  /* margin-top: 20px; */
+  height: 100vh;
+  width: 50%;
+  position: absolute;
+  z-index: 100;
+  background: var(--background-color);
+  top: 0;
+  left: 0;
+  transition: 0.5s ease;
+}
+nav ul {
+  list-style: none;
+}
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  transition: 0.5s ease;
+  margin: 0;
+  color: var(--secondary-color);
+}
+.nav-list li {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.sidebar-notshow {
+  width: 0; /* Add this line to smoothly transition the width */
+  /* display: none !important; */
+  position: relative;
+  overflow: hidden;
+}
+.notshow {
+  display: none;
+}
+.navbar-list {
+  display: flex;
+}
+.side-list li {
+  text-align: start;
+  margin: 10px 0 !important;
+  padding: 10px 0 !important;
+  color: var(--secondary-color);
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+.side-list li:hover {
+  cursor: pointer;
+  color: var(--primary-color) !important;
+}
