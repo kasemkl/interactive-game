@@ -35,6 +35,23 @@ const Navbar = () => {
               MKB Game
             </Link>
           </div>
+          <div className="navbar-list" id="navbarSupportedContent">
+            <ul className="nav-list ml-auto">
+              {user ? (
+                <li className=" ">
+                  <button onClick={handleLogout} className="nav-link">
+                    Logout
+                  </button>
+                </li>
+              ) : (
+                <li className=" ">
+                  <Link to="login" className="nav-link">
+                    Sign in
+                  </Link>
+                </li>
+              )}
+            </ul>
+          </div>
         </>
       ) : (
         <>
