@@ -20,7 +20,7 @@ h1 {
 }
 ul {
   list-style: none;
-  padding: 0;
+  padding: 0 !important;
 }
 .menu li {
   width: 400px;
