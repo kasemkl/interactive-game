@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/interactive-game/static/css/main.04248d79.css",
-    "main.js": "/interactive-game/static/js/main.6696dd46.js",
+    "main.css": "/interactive-game/static/css/main.4a462d4e.css",
+    "main.js": "/interactive-game/static/js/main.e8454db9.js",
+    "static/media/hallak.jpg": "/interactive-game/static/media/hallak.2e1a1a9f229d600acda0.jpg",
     "index.html": "/interactive-game/index.html",
-    "main.04248d79.css.map": "/interactive-game/static/css/main.04248d79.css.map",
-    "main.6696dd46.js.map": "/interactive-game/static/js/main.6696dd46.js.map"
+    "main.4a462d4e.css.map": "/interactive-game/static/css/main.4a462d4e.css.map",
+    "main.e8454db9.js.map": "/interactive-game/static/js/main.e8454db9.js.map"
   },
   "entrypoints": [
-    "static/css/main.04248d79.css",
-    "static/js/main.6696dd46.js"
+    "static/css/main.4a462d4e.css",
+    "static/js/main.e8454db9.js"
   ]
 }
