@@ -125,15 +125,24 @@ nav ul {
 .navbar-list {
   display: flex;
 }
+.side-list {
+  padding: 10px !important;
+}
 .side-list li {
   text-align: start;
   margin: 10px 0 !important;
-  padding: 10px 0 !important;
+  padding: 10px 20px !important;
   color: var(--secondary-color);
   transition: all 0.3s ease;
   font-weight: bold;
+  border-radius: 20px;
 }
-.side-list li:hover {
+.side-list a {
+  text-decoration: none;
+  color: inherit;
+}
+.side-list .side-menu:hover {
   cursor: pointer;
-  color: var(--primary-color) !important;
+  color: var(--background-color);
+  background-color: var(--secondary-color) !important;
 }

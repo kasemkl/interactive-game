@@ -63,7 +63,7 @@ const Navbar = () => {
           <div className="navbar-list" id="navbarSupportedContent">
             <ul className="nav-list ml-auto">
               <li className=" ">
-                <Link to="#" className="nav-link">
+                <Link to="/about-us" className="nav-link">
                   About us
                 </Link>
               </li>

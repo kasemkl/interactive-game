@@ -28,9 +28,15 @@ const SideBar = () => {
               MKB Game
             </Link>
           </li>
-          <li>Main </li>
-          <li>Rules</li>
-          <li>About us</li>
+          <li className="side-menu">
+            <Link to="">Main </Link>
+          </li>
+          <li className="side-menu">
+            <Link to="">Rules</Link>
+          </li>
+          <li className="side-menu">
+            <Link to="/about-us">About Us</Link>
+          </li>
         </ul>
       </div>
     </>
