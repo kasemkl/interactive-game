@@ -4,10 +4,12 @@ import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 const Signup = () => {
+  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmationPassword, setConfirmationPassword] = useState("");
   const navigate = useNavigate();
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const formData = {
@@ -19,9 +21,19 @@ const Signup = () => {
   };
 
   return (
-    <div className="Form">
+    <div className="Form signup">
       <form onSubmit={handleSubmit}>
         <fieldset>
+          <div className="field ">
+            <label>Name</label>
+            <input
+              type="text"
+              name="name"
+              value={name}
+              placeholder="enter your name ..."
+              onChange={(e) => setEmail(e.target.value)}
+            />
+          </div>
           <div className="field ">
             <label>Email</label>
             <input

@@ -18,7 +18,9 @@ fieldset {
   background-color: #fff;
   box-shadow: 0 4px 8px rgb(49 36 73 / 17%);
 }
-
+.signup fieldset {
+  height: auto !important;
+}
 .Form .title {
   position: relative;
   font-size: 27px;

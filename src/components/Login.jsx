@@ -6,14 +6,36 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+
     const formData = {
       email: email,
       password: password,
     };
+
     localStorage.setItem("email", formData.email);
-    navigate("/");
+
+    try {
+      const response = await fetch("http://localhost:42069/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.status === 200) {
+        alert("login success");
+        navigate("/");
+      } else {
+        console.error("Login failed:", response.statusText);
+        alert("login falied");
+      }
+    } catch (error) {
+      alert("Error:", error);
+      console.error("Error");
+    }
   };
 
   return (

@@ -5,14 +5,14 @@ const AboutUs = () => {
     <div>
       <div className="container">
         <div className="about-us">
-          <div className="img">
-            <img src={require(`../images/hallak.jpg`)} alt="" />
-          </div>
+          {/* <div className="img">
+            <img src={require(``)} alt="" />
+          </div> */}
 
           <div className="text">
             <h2 className="">Who Are We?</h2>
             <div className="">
-              <h4>Mohammad (Your uncle):</h4>
+              <h4>Mohammad :</h4>
               <p>
                 Mohammad is a competitive programmer and skilled backend
                 developer with a passion for solving complex problems and
