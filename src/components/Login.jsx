@@ -24,7 +24,7 @@ const Login = () => {
         },
         body: JSON.stringify(formData),
       });
-
+      console.log(response);
       if (response.status === 200) {
         alert("login success");
         navigate("/");

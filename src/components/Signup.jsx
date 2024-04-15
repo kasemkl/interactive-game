@@ -10,14 +10,41 @@ const Signup = () => {
   const [confirmationPassword, setConfirmationPassword] = useState("");
   const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+
+    if (password !== confirmationPassword) {
+      console.error("Passwords do not match");
+      return;
+    }
+
     const formData = {
+      name: name,
       email: email,
       password: password,
     };
-    localStorage.setItem("email", formData.email);
-    navigate("/");
+
+    try {
+      const response = await fetch("http://localhost:42069/signup", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.status === 200) {
+        localStorage.setItem("email", formData.email);
+        alert("Login sucess");
+        navigate("/");
+      } else {
+        console.error("Signup failed:", response.statusText);
+        alert("login fail");
+      }
+    } catch (error) {
+      alert("Error");
+      console.error("Error:", error);
+    }
   };
 
   return (
